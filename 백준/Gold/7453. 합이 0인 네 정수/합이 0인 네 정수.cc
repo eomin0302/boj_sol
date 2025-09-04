@@ -10,7 +10,7 @@ int main(void){
     
     int n;
     int A[4000], B[4000], C[4000], D[4000];
-    vector<long long> SumCD;
+    vector<int> SumCD;
     long long Answer = 0;
     
     cin >> n;

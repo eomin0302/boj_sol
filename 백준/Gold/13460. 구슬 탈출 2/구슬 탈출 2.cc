@@ -207,7 +207,8 @@ void BruteForce(int Direction, int Depth){
     else if (!RedinHole && !BlueinHole){
         if (Depth < MAXCOUNT && Depth < MinDepth){
             for (int i = 0; i < 4; i++){
-                BruteForce(Dir[i], Depth + 1);
+                if (i != Direction)
+                    BruteForce(Dir[i], Depth + 1);
             }
         }
     }
